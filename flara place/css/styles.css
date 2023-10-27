@@ -1,0 +1,443 @@
+:root{
+    --color1:#025595;
+    
+}
+@font-face {
+font-family: 'Ubuntu';
+src:url('../webfonts/Ubuntu-Medium.ttf') format('truetype'); 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    outline: none;
+    border: none;
+}
+html {
+	font-size: 16px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+.container {
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+/* compont start*/
+.compont{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.compont>h2{
+    text-transform: capitalize;
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Syne', sans-serif;
+}
+.compont>p{
+    color:  #16100D80;
+    line-height: 2.1;
+    margin-bottom: 50px
+}
+
+/* compont end*/
+
+
+
+/*header start*/
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/modern-residential-building-transformed%201.png');
+    background-repeat: no-repeat;
+    background-position:right 80px;
+    background-size: contain;
+    background-color: rgba(2,85,149,.2);
+    
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:c red;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+nav li a{
+    padding: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav button{
+    background-color: var(--color1);
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    border-radius: 10px;    
+}
+nav .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+nav .logo>p{
+    font-size: 1.9em;
+    font-family: Ubuntu;
+}
+
+header #nav-text{
+    background: f red;
+    width: 50%;
+    margin-top: 80px;
+}
+header #nav-text p:nth-child(-1n+2){
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 2px
+}
+header #nav-text p:nth-child(3){
+    font-size: .9em;
+    font-weight: 100;
+    color: #737373;
+    margin-top: 10px;
+}
+header #nav-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 60px;
+    background-color: rgba(255,255,255,.5);
+    border-radius: 10px;
+}
+header #nav-icon div{
+ background-color:c red;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+}
+header #nav-icon div i{
+    color: var(--color1);    
+    font-size: 20px;
+    z-index: 5;
+}
+
+header #nav-icon div i:nth-child(2){   
+    position: relative;
+    z-index: 2;    
+}
+
+header #nav-icon div:nth-child(1) i:nth-child(2){
+    color: rgba(2,85,149,.2);
+    right: 15px;
+    font-size: 15px
+}
+header #nav-icon div:nth-child(2) i:nth-child(2){
+    color: rgba(2,85,149,.2);
+    right: 19px;
+    font-size: 25px
+}
+header #nav-icon div:nth-child(3) i:nth-child(2){
+    color: #6b9ec5;
+    right: 23px;
+    font-size: 22px;
+    z-index: 9;
+}
+
+header #nav-icon:last-child {
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+header #nav-icon div div{
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 20px;   
+    font-weight: 500;
+}
+header #nav-icon div div p:nth-child(2){
+    margin-top: 9px;
+    font-weight: 100;
+}
+header #nav-icon div:nth-child(4){
+        background: var(--color1);
+    width:50px;
+    height:50px;
+    padding: 0;
+    margin-right: 20px;
+    display:flex;
+    justify-content: center;
+    border-radius: 8px;
+}
+header #nav-icon div:nth-child(4) i {
+    color: #fff;
+}
+header #nav-end-text{
+    display: flex;
+    margin-top: 60px
+}
+header #nav-end-text div{
+    margin-right: 50px;
+   
+}
+header #nav-end-text div p:nth-child(1){
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+header #nav-end-text div p:nth-child(2){
+    font-size: .9em;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+/*header end*/
+/*secation 1 start*/
+#sec-1 .container{
+    display: flex;
+    column-gap: 20px;
+}
+#sec-1 .container div{
+    padding: 20px;
+    border-radius: 20px;
+}
+#sec-1 .container div i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: rgba(2,85,149,.5);
+}
+#sec-1 .container div:nth-child(2){
+    background: var(--color1);
+    color: #fff ;
+}
+#sec-1 .container div:nth-child(2) i{
+    color: #fff ;
+}
+#sec-1 .container div i{
+    
+}
+/*secation 1 end*/
+/*secation 2 start*/
+
+.sec-2 .container{
+    position: relative;
+    height: 438px;
+}
+.sec-2 .container img{
+    width: 1024px;
+    height: 438px;
+    /*left: 266px;*/
+    border-radius: 16px;
+    position: absolute;
+    right: 0;
+}
+.sec-2 .container>div{
+    background-color: #fff;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 273px;
+    height: 215px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: -10px 10px 30px -5px;
+}
+.sec-2 .container>div>p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.sec-2 .container>div>h4{
+    margin-bottom: 10px;
+}
+.room-icon i{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+ .locatino-icon-adrs{
+    display: flex;
+    column-gap: 10px;
+    word-spacing: 5px;
+}
+
+/*secation 2 end*/
+/*secation 3 start*/
+.sec-3{
+    margin-top: 50px;
+}
+.sec-3 .container img{
+    left: 0;
+}
+.sec-3 .container>div{
+    right: 0;
+    box-shadow: 10px 10px 40px -5px;
+}
+/*secation 3 end*/
+/*secation 4 start*/
+#sec-4 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap:50px;
+}
+#sec-4 .container article{
+    width: 32%;
+    height: 100%;
+    padding: 10px;
+    box-shadow: 0px 8.148148536682129px 6.518518447875977px 0px #00000002;
+    box-shadow: 0px 50px 100px 0px #0000000A;
+    background-color: #fff;
+    border-radius: 20px;
+}
+#sec-4 .box-icon-adrs>p{
+    color: blue;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#sec-4 .box-icon-adrs>h4{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+#sec-4 article .box-icon-adrs .room-icon i{
+    margin-bottom: 20px;
+}
+/*secation 4 end*/
+/*secation 5 start*/
+#sec-5 .container{
+    position: relative;
+}
+#sec-5 #sec-5-box-text{
+    background-color: rgba(2,85,149,.3);
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    z-index: -1;
+    padding: 20px;
+    padding-left: 190px;
+    border-radius: 20px;
+}
+#sec-5 #sec-5-box-text i{
+    color: gold;
+    margin-bottom: 50px;
+}
+#sec-5 #sec-5-box-text h4{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+#sec-5 #sec-5-box-text h6{
+    color:  #16100D80;
+    padding-top: 5px;
+}
+
+#sec-5 #sec-5-box-text .sec-5-avater{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/*secation 5 end*/
+/*footer start*/
+footer{
+    margin-top: 150px;
+}
+.parent {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 22px;
+grid-row-gap: 0px;
+}
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 3; 
+}
+.div1 .footer-logo p{
+    font-family: Ubuntu;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.div1 .footer-logo + p{
+    color:  #16100D80;
+    font-size: .8em;
+}
+.div4 { 
+    grid-area: 1 / 3 / 2 / 4;
+}
+.div4 ol{
+    list-style: none;
+    
+}
+.div4 ol li{
+    padding: 8px
+}
+.div4 ol li:nth-child(1){
+    font-weight: 700;
+}
+.div3 ol{
+    list-style: none;
+    
+}
+.div3 ol li{
+    padding: 8px
+}
+.div3 ol li:nth-child(1){
+    font-weight: 700;
+}
+.div3 { grid-area: 1 / 4 / 2 / 5; }
+
+
+.div2 { grid-area: 1 / 5 / 2 / 7; }
+.div2 p{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.div2 i{
+    margin-right: 30px;
+    font-size: 1.9em;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color1);
+    text-align: center;
+    line-height: 50px;
+}
+/*footer end*/
+
+
+hr{
+    margin-top: 20px;
+    width: 100%;
+    height: 2px;
+    background: #16100D80;
+}
+
+.copy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    color: #16100D80;
+}
+.copy div{
+    display: flex;
+    
+}
+.copy div p{
+    margin-left: 30px;
+}
